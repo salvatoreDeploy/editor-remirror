@@ -9,10 +9,10 @@ interface MyEditorProps {
 
 export function MyEditor({ onChange, initialContent }: MyEditorProps) {
   return (
-    <div style={{ padding: 16 }}>
+    <div className="p-4">
       <WysiwygEditor placeholder="Enter Text..." initialContent={initialContent}>
         <OnChangeJSON onChange={onChange} />
-      </WysiwygEditor>
-    </div>
+      </WysiwygEditor >
+    </div >
   )
 }

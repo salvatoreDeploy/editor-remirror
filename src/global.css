@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.remirror-editor.ProseMirror {
+  overflow: hidden !important;
+}
+
+p {
+  margin: 0 !important;
+  paddin: 0 !important;
+}
+
+p[data-placeholder] {
+  font-size: 1.5em !important;
+}
+
+p[data-placeholder]::before {
+  content: attr(data-placeholder); /* Usar o valor do atributo como conteúdo */
+}
+
+.css-1oj0loj-MuiButtonBase-root-MuiToggleButton-root[type="button"] {
+  border: 1px solid #fff;
+}
+
+.css-1oj0loj-MuiButtonBase-root-MuiToggleButton-root.Mui-disabled {
+  border: 1px solid #fff !important;
+}
+
+.css-1wz6ik3 {
+  background-color: #17141f !important;
+}
+
+.css-1w1zai3 > button > svg {
+  fill: #fff;
+}
